@@ -1,0 +1,122 @@
+/* Basic Styling */
+body {
+    font-family: "Urbanist", arial;
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+/* Parallax Styling */
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Navbar Styling */
+#navbar ul {
+    position: fixed;
+    z-index: 100;
+    list-style-type: none;
+    width: 100vw;
+    height: 45px;
+    top: 0px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+#navbar li {
+    cursor: pointer;
+    float: left;
+}
+
+#navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.33s;
+}
+
+#navbar li a:hover {
+    background-color: #111;
+}
+
+/* Header Styling */
+#header {
+    position: relative;
+    background-image: linear-gradient(43deg,
+            rgba(255, 255, 255, 0.5),
+            rgba(255, 222, 222, 0.5)),
+        url("https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Marnick_Lagrou.jpg/1024px-Marnick_Lagrou.jpg");
+    background-size: cover;
+    min-height: 100vh;
+}
+
+#header span {
+    position: relative;
+    top: 30vh;
+    text-align: center;
+}
+
+#header #downBtn {
+    position: relative;
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 100%;
+    padding: 0px;
+    width: 35px;
+    height: 35px;
+    left: calc(50vw - 35px);
+}
+
+#header #downBtn:hover {
+    transform: translate(0%, 25%);
+}
+
+/* Card Styling */
+.card {
+    position: relative;
+    width: 90vw;
+    left: 5vw;
+}
+
+.alignRight {
+    text-align: right;
+}
+
+.alignLeft {
+    text-align: left;
+}
+
+.alignCenter {
+    text-align: center;
+}
+
+/* Section Styling */
+.section {
+    padding-top: 1px;
+    padding-bottom: 20px;
+}
+
+.section:nth-child(odd) {
+    background: #EEE;
+}
+
+/* Button Styling */
+button {
+    position: relative;
+    border: none;
+    border-radius: 5px;
+    background: #333;
+    padding: 5px 25px;
+    color: white;
+    transition: 0.33s;
+}
+
+button:hover {
+    background-color: #111;
+    cursor: pointer;
+}

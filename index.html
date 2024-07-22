@@ -1,13 +1,169 @@
 <!DOCTYPE html>
 <html>
-    <head>
 
-        <title>Title</title>
+<head>
 
-    </head>
-    <body>
+    <!-- Meta Tags & Title -->
+    <meta charset="utf-8">
+    <meta description="Description Here">
+    <title>Portfolio</title>
 
-        <p>Body Content</p>
+    <!-- Import Google Fonts & Material Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@200..800&display=swap&&family=Material+Icons&display=swap" rel="stylesheet">
 
-    </body>
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav id="navbar">
+        <ul>
+            <li><a onclick="changePage(1);">Home</a></li>
+            <li><a onclick="changePage(2);">About</a></li>
+            <li><a onclick="changePage(3);">Skills</a></li>
+            <li><a onclick="changePage(4);">Projects</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <div id="header" class="parallax">
+        <span>
+            <h1 id="title"></h1>
+            <p id="subtitle"></p><br><br>
+            <button id="downBtn" class="material-icons" onclick="smoothScroll(380);">arrow_downward</button>
+        </span>
+    </div>
+
+    <!-- Home Page (1) -->
+    <div id="home" class="page">
+
+        <!-- About Section -->
+        <div class="section">
+
+            <!-- About Card #1 -->
+            <div class="card">
+                <h2>Header 2 (About)</h2>
+                <p>Content</p>
+            </div>
+
+            <!-- About Card #2 -->
+            <div class="card alignRight">
+                <h2>Header 2 (About)</h2>
+                <p>Content</p><br>
+            </div>
+
+            <!-- About Page Button -->
+            <div class="alignCenter">
+                <button onclick="changePage(2);">Learn More</button>
+            </div>
+
+        </div>
+
+        <!-- Skills Section -->
+        <div class="section">
+
+            <!-- Skills Card -->
+            <div class="card alignCenter">
+                <h2>My Skills:</h2>
+                <p>Sliders of Skills</p>
+                <button onclick="changePage(3);">View All Skills</button>
+            </div>
+
+        </div>
+        
+        <!-- Skills Section -->
+        <div class="section">
+
+        <!-- Projects Card -->
+        <div class="card alignCenter">
+                <h2>Featured Projects:</h2>
+                <p>Featured Projects Divs</p>
+                <button onclick="changePage(3);">View All My Projects</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- About Page (2) -->
+    <div class="page">
+
+        <!-- About Section -->
+        <div class="section">
+
+            <!-- About Card -->
+            <div class="card alignCenter">
+                <h2>Header 2</h2>
+                <p>Content</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Skills Page (3) -->
+    <div class="page">
+
+        <!-- Questions Section -->
+        <div class="section">
+
+            <div class="card">
+                <h2>Header 2</h2>
+                <p>Content</p>
+            </div>
+
+            <div class="card alignRight">
+                <h2>Header 2</h2>
+                <p>Content</p>
+            </div>
+
+        </div>
+
+        <!-- Skills Section -->
+        <div class="section">
+
+            <!-- Sliders Card -->
+            <div class="card alignCenter">
+                <h2>My Skills:</h2>
+                <p>Sliders</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Projects Page (4) -->
+    <div class="page">
+
+        <!-- Projects Section -->
+        <div class="section">
+
+            <!-- Projects Card -->
+            <div class="card alignCenter">
+                <h2>My Projects</h2>
+                <p>Cards with All Projects</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+
+    </footer>
+
+    <!-- Main Javascript -->
+    <script href="index.js"></script>
+
+    <!-- Page Switching Javascript -->
+    <script href="page.js"></script>
+
+</body>
+
 </html>
